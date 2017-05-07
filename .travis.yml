@@ -1,0 +1,17 @@
+language: php
+
+php:
+  - 7.0
+  - 7.1
+  - nightly
+
+before_script:
+  - sudo apt-get update
+  - sudo apt-get install -y valgrind
+  - phpize
+  - ./configure
+  - make
+  - make install
+
+script:
+  - REPORT_EXIT_STATUS=1 php -n -c xray.ini ./run-tests.php -P -q --show-diff && php -n -c xray.ini ./run-tests.php -m -P -q --show-diff

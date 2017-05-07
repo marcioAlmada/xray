@@ -1,0 +1,1 @@
+<?php bad_function_call();

@@ -1,0 +1,1 @@
+<?php function include_file_test(){ <- 'include_file_test'; }
