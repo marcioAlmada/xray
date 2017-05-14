@@ -1,0 +1,14 @@
+{
+    "name": "marc/xray",
+    "version": "0.1.0",
+    "description": "X-Ray allows declaration of Zend Engine include() and eval() hooks.",
+    "type": "extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Márcio Almada",
+            "email": "marcio3w@gmail.com",
+            "homepage": "https://github.com/marcioAlmada"
+        }
+    ]
+}
