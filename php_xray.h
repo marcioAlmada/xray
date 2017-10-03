@@ -16,7 +16,9 @@ zend_op_array *(*orig_zend_compile_string)(zval *src, char *filename);
     call_user_function(EG(function_table), NULL, XRAY_G(hook), &result, sizeof(params)/sizeof(zval), params) == SUCCESS
 
 #define XRAY_THROW_RESULT_MUST_BE_STRING() \
-    zend_throw_exception(zend_exception_get_default(TSRMLS_C), "Return value of X-Ray compiler hook must be a string", 0 TSRMLS_CC);
+    if (!EG(exception)) { \
+        zend_throw_exception(zend_exception_get_default(TSRMLS_C), "Return value of X-Ray compiler hook must be a string", 0 TSRMLS_CC); \
+    }
 
 ZEND_BEGIN_MODULE_GLOBALS(xray)
 zval hook;

@@ -16,8 +16,4 @@ Stack trace:
 #0 %s/005.php(5): {closure}('echo 'eval';', NULL)
 #1 %s/005.php(5): eval()
 #2 {main}
-
-Next Exception: Return value of X-Ray compiler hook must be a string in %s/005.php:5
-Stack trace:
-#0 {main}
-  thrown in %s/005.php on line 5
+  thrown in /%s/005.php on line 3

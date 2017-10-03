@@ -18,8 +18,4 @@ Stack trace:
 #0 %s/004.php(5): {closure}('<?php echo 'inc...', 'data://text/pla...')
 #1 %s/004.php(5): include()
 #2 {main}
-
-Next Exception: Return value of X-Ray compiler hook must be a string in %s/004.php:5
-Stack trace:
-#0 {main}
-  thrown in %s/004.php on line 5
+  thrown in /%s/004.php on line 3
