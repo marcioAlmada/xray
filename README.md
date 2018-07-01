@@ -47,8 +47,6 @@ Pull requests welcome. Anyone?
 A compiler hook API was needed in order to have a decent infrastructure for [YAY](https://github.com/marcioAlmada/yay).
 But this ended up as a more general purpose internal framework so [others projects](https://github.com/phplang/phack) can benefit too.
 
-<img width="500px" src="https://i.imgflip.com/1b4fjb.jpg" title="PHP WITH BLACKJACK AND HOOKERS"/>
-
 ## Copyright
 
 Copyright (c) 2015-* Márcio Almada. Distributed under the terms of an MIT-style license.
